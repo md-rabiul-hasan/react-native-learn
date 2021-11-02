@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import PresentationalComponent from './src/components/PresentationalComponent';
+import Style from './src/components/Style';
 
 const App = () => {
   const paragraph = {
@@ -16,7 +17,7 @@ const App = () => {
   }
   return (
     <View>
-      <PresentationalComponent paragraph={para.content} updateParagraph={updateParagraph} />
+      <Style />
     </View>
   );
 };
