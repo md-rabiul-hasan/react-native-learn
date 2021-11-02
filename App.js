@@ -1,21 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, StyleSheet} from 'react-native';
+import PresentationalComponent from './src/components/PresentationalComponent';
 
-export default function App() {
+const App = () => {
+  const paragraph = {
+    content: 'Hello Bangladesh'
+  }
+  const [para, setPara] = useState(paragraph);
+
+  const updateParagraph = (country) => {
+    const newtext = {
+      content: 'Hello '+country
+    }
+    setPara(newtext);
+  }
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <PresentationalComponent paragraph={para.content} updateParagraph={updateParagraph} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: 'yellow',
     justifyContent: 'center',
-  },
+    alignItems: 'center'
+
+  }
 });
+
+export default App;
