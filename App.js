@@ -15,7 +15,7 @@ const App = () => {
     setPara(newtext);
   }
   return (
-    <View style={styles.container}>
+    <View>
       <PresentationalComponent paragraph={para.content} updateParagraph={updateParagraph} />
     </View>
   );
