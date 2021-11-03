@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import Input from './src/components/Input';
 import List from './src/components/List';
 import PresentationalComponent from './src/components/PresentationalComponent';
 import Style from './src/components/Style';
@@ -18,7 +19,7 @@ const App = () => {
   }
   return (
     <View>
-      <List />
+      <Input />
     </View>
   );
 };
