@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import ImageExample from './src/components/ImageExample';
 import Input from './src/components/Input';
 import List from './src/components/List';
 import PresentationalComponent from './src/components/PresentationalComponent';
@@ -19,7 +20,10 @@ const App = () => {
     setPara(newtext);
   }
   return (
-      <ScrollViewScreen />
+      <View style={{ marginTop: 20 }}>
+        <ImageExample />
+      </View>
+      
   );
 };
 
