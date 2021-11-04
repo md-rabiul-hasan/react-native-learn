@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import HttpExample from './src/components/HttpExample';
 import ImageExample from './src/components/ImageExample';
 import Input from './src/components/Input';
 import List from './src/components/List';
@@ -21,7 +22,7 @@ const App = () => {
   }
   return (
       <View style={{ marginTop: 20 }}>
-        <ImageExample />
+        <HttpExample />
       </View>
       
   );
