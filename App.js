@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import Input from './src/components/Input';
 import List from './src/components/List';
 import PresentationalComponent from './src/components/PresentationalComponent';
+import ScrollViewScreen from './src/components/ScrollView';
 import Style from './src/components/Style';
 
 const App = () => {
@@ -18,9 +19,7 @@ const App = () => {
     setPara(newtext);
   }
   return (
-    <View>
-      <Input />
-    </View>
+      <ScrollViewScreen />
   );
 };
 
