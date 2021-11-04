@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import ButtonExample from './src/components/ButtonExample';
 import HttpExample from './src/components/HttpExample';
 import ImageExample from './src/components/ImageExample';
 import Input from './src/components/Input';
@@ -21,8 +22,8 @@ const App = () => {
     setPara(newtext);
   }
   return (
-      <View style={{ marginTop: 20 }}>
-        <HttpExample />
+      <View style={{ marginTop: 50 }}>
+        <ButtonExample />
       </View>
       
   );
