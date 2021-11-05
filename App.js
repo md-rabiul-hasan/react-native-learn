@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import Animations from './src/components/Animations';
 import ButtonExample from './src/components/ButtonExample';
 import HttpExample from './src/components/HttpExample';
 import ImageExample from './src/components/ImageExample';
@@ -23,7 +24,7 @@ const App = () => {
   }
   return (
       <View style={{ marginTop: 50 }}>
-        <ButtonExample />
+        <Animations />
       </View>
       
   );
@@ -40,3 +41,4 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
